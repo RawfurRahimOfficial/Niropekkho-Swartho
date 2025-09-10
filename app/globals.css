@@ -1,0 +1,161 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "BanRegularFont";
+  src: url("/Font/Bornomala-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BanBoldFont";
+  src: url("/Font/Bornomala-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EnFont";
+  src: url("/Font/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.Container {
+  width: 94%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.Navbar {
+  background: white;
+  width: 100%;
+  height: 75px;
+  /* border-bottom: 1px solid #215db71a; */
+  box-shadow: 0px -16px 24px, 0px -34px 50px #000000;
+}
+
+.NavbarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.NavbarContent a {
+  text-decoration: none;
+}
+
+.NavbarLogo a {
+  color: #0f2d56;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.NavbarLogo {width: 256px;}
+
+.NavbarMenu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+.NavbarMenu a {
+  color: #0f2d56;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Language Switcher CSS */
+.language-switcher {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.language-btn {
+  flex: 1 1;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.language-btn:first-child {
+  font-family: BanRegularFont, sans-serif;
+  font-size: 16px;
+}
+
+.language-btn:last-child {
+  font-family: EnFont, sans-serif;
+}
+
+.language-btn.active {
+  background-color: #b8d6ff;
+  color: #0f2d2d;
+}
+
+.language-btn:not(.active):hover {
+  background: #f0f0f0;
+}
+
+
+
+
+/* Donate Button CSS */
+.donate-btn {
+  /* padding: 8px 16px; */
+  background-color: #145DA0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
+  font-size: 16px;
+  width: 100px;
+  height: 39px;
+}
+
+.donate-btn.bn {
+  font-family: BanRegularFont, sans-serif;
+}
+.donate-btn.en {
+  font-family: EnFont, sans-serif;
+}
+
+.donate-btn:hover:not(:disabled) {
+  background-color: #114b81;
+}
+
+.donate-btn:disabled {
+  cursor: not-allowed;
+}
+
+
