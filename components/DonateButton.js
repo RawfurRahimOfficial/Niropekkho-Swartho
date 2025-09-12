@@ -29,7 +29,10 @@ export default function DonateButton() {
 
   return (
     <button
-      onClick={handleDonate}
+      onClick={() => {
+        handleDonate();
+        setMobileOpen(false);
+      }}
       className={`donate-btn ${lang}`}
     >
       {texts[lang].donate}
